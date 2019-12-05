@@ -7,6 +7,7 @@
 cd get_result_code
 </br>
 # precrop.py 실행
+</br>
 python precrop.py -i "../images/" -o "../output/"
 </br>
 ( python precrop.py -i "input 이미지 디렉토리" -o "output 디렉토리" )
