@@ -3,11 +3,11 @@
 </br>
 동작 원리 : 이미지에서 눈(2) 코(1) 입(2) 5개 점을 찾아서 얼굴 위치 파악
 </br>
-# get_result_code 폴더로 이동
+get_result_code 폴더로 이동
 </br>
 cd get_result_code
 </br>
-# precrop.py 실행
+precrop.py 실행
 </br>
 python precrop.py -i "../images/" -o "../output/"
 </br>
