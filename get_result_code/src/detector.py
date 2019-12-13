@@ -4,6 +4,7 @@ from torch.autograd import Variable
 from .get_nets import PNet, RNet, ONet
 from .box_utils import nms, calibrate_box, get_image_boxes, convert_to_square
 from .first_stage import run_first_stage
+import cv2
 
 
 def detect_faces(image, min_face_size=20.0,
@@ -73,6 +74,7 @@ def detect_faces(image, min_face_size=20.0,
     bounding_boxes = convert_to_square(bounding_boxes)
     bounding_boxes[:, 0:4] = np.round(bounding_boxes[:, 0:4])
 
+
     # STAGE 2
 
     img_boxes = get_image_boxes(bounding_boxes, image, size=24)
@@ -100,6 +102,7 @@ def detect_faces(image, min_face_size=20.0,
     img_boxes = Variable(torch.FloatTensor(img_boxes), volatile=True)
     output = onet(img_boxes)
     landmarks = output[0].data.numpy()  # shape [n_boxes, 10]
+   # print("landmarks : " + str(landmarks))
     offsets = output[1].data.numpy()  # shape [n_boxes, 4]
     probs = output[2].data.numpy()  # shape [n_boxes, 2]
 
@@ -108,13 +111,14 @@ def detect_faces(image, min_face_size=20.0,
     bounding_boxes[:, 4] = probs[keep, 1].reshape((-1,))
     offsets = offsets[keep]
     landmarks = landmarks[keep]
-
+    # print("landmarks : " + str(landmarks))
     # compute landmark points
     width = bounding_boxes[:, 2] - bounding_boxes[:, 0] + 1.0
     height = bounding_boxes[:, 3] - bounding_boxes[:, 1] + 1.0
     xmin, ymin = bounding_boxes[:, 0], bounding_boxes[:, 1]
     landmarks[:, 0:5] = np.expand_dims(xmin, 1) + np.expand_dims(width, 1)*landmarks[:, 0:5]
     landmarks[:, 5:10] = np.expand_dims(ymin, 1) + np.expand_dims(height, 1)*landmarks[:, 5:10]
+
 
     bounding_boxes = calibrate_box(bounding_boxes, offsets)
     keep = nms(bounding_boxes, nms_thresholds[2], mode='min')

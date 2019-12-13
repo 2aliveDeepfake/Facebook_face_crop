@@ -69,11 +69,24 @@ for file in file_array :
 
     # detect faces using mtcnn => 얼굴 인식
     bboxs, landmarks = detect_faces(PIL_img)
+
+
+    # 이미지에서 코 점 찍기
+    #cv2.circle(cv2_img, ((landmarks[0][2]), landmarks[0][7]), 5, (255, 255, 100), -1)
+
+    # 이미지에서 입 점 찍기
+    # cv2.circle(cv2_img, ((landmarks[0][3]), landmarks[0][9]), 5, (255, 255, 100), -1)
+    # cv2.circle(cv2_img, ((landmarks[0][4]), landmarks[0][9]), 5, (0, 255, 255), -1)
+
+    cv2.imshow("nose", cv2_img)
+    cv2.waitKey(0)
+
     org_height, org_width, channel = cv2_img.shape
-    # print("org_height= " + str(org_height) + ", org_width= " + str(org_width))
+
 
     # crop face area in the img => 이미지 별로 얼굴 부분 자르기
     for i in range(len(bboxs)):
+        #print("bounding_box" , bboxs[i])
         x1, y1, x2, y2, score = bboxs[i]
         height = int(y2) - int(y1)
         width = int(x2) - int(x1)
@@ -109,8 +122,6 @@ for file in file_array :
         crop_img = cv2_img[crop_y1:crop_y2, crop_x1:crop_x2]
         height, width, chennel = crop_img.shape
 
-        # resize the cropped area maintaing the width height ratio
-        #img = image_resize(crop_img, height=128, width=128)
 
         output_path=output_dir+filename+'_'+str(i)+'.jpg'
 
