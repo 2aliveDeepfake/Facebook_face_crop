@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ff5f65e-771d-48e7-8c4d-8e0b5c0a315a" name="Default Changelist" comment="" />
+    <list default="true" id="7ff5f65e-771d-48e7-8c4d-8e0b5c0a315a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/get_result_code/json_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_result_code/metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_result_code/id_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/get_result_code/id_list.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_result_code/precrop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="145">
+              <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -22,11 +27,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/get_result_code/json_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_result_code/metadata.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret column="16829" selection-start-column="16829" selection-end-column="16829" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_result_code/img_change.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="138">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -47,6 +73,10 @@
     <findStrings>
       <find>mtc</find>
       <find>cv2.imread</find>
+      <find>detect</find>
+      <find>resize</find>
+      <find>real</find>
+      <find>aabdnomlru.mp4</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,10 +90,12 @@
         <option value="$PROJECT_DIR$/get_result_code/src/get_nets.py" />
         <option value="$PROJECT_DIR$/get_result_code/img_cut.py" />
         <option value="$PROJECT_DIR$/get_result_code/black_cut.py" />
-        <option value="$PROJECT_DIR$/get_result_code/precrop.py" />
         <option value="$PROJECT_DIR$/get_result_code/precrop3.py" />
         <option value="$PROJECT_DIR$/get_result_code/precrop4.py" />
         <option value="$PROJECT_DIR$/get_result_code/precrop2.py" />
+        <option value="$PROJECT_DIR$/get_result_code/precrop.py" />
+        <option value="$PROJECT_DIR$/get_result_code/metadata.json" />
+        <option value="$PROJECT_DIR$/get_result_code/json_parser.py" />
       </list>
     </option>
   </component>
@@ -88,7 +120,13 @@
             <path>
               <item name="Facebook_face_crop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook_face_crop" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+              <item name="get_result_code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook_face_crop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook_face_crop" type="462c0819:PsiDirectoryNode" />
+              <item name="get_result_code" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -98,7 +136,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PytorchProject" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -106,10 +144,11 @@
       <recent name="D:\workspace_python\FacebookDeepfake" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ju\PycharmProjects\FacebookDeepfake-master\get_result_code" />
-      <recent name="C:\Users\Ju\PycharmProjects\FacebookDeepfake-master\dataset" />
-      <recent name="D:\workspace_python\FacebookDeepfake" />
-      <recent name="D:\workspace_python\FacebookDeepfake\AUROC" />
+      <recent name="C:\Users\Ju\PycharmProjects\Facebook_face_crop\get_result_code" />
+      <recent name="C:\Users\Ju\PycharmProjects\Facebook_face_crop" />
+      <recent name="C:\Users\Ju\PycharmProjects\Facebook_face_crop\dataset" />
+      <recent name="C:\Users\Ju\PycharmProjects\Facebook_face_crop\dataset\test11" />
+      <recent name="C:\Users\Ju\PycharmProjects\Facebook_face_crop\dataset\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -176,19 +215,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11686938" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.11792702" />
+      <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.11686938" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49867794" weight="0.32998884" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32887402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997356" weight="0.32887402" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5002644" side_tool="true" weight="0.2831661" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920678" weight="0.32887402" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49920678" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.50132203" side_tool="true" visible="true" weight="0.38795987" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32887402" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -220,13 +260,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AUROC/README.md" />
     <entry file="file://$PROJECT_DIR$/mission1_model.png" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model_train_code/mission1_labels/test_label_sample.csv" />
     <entry file="file://$PROJECT_DIR$/AUROC/plot_example.png" />
     <entry file="file://$PROJECT_DIR$/AUROC/auroc.py" />
@@ -246,23 +279,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_result_code/src/get_nets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="150" column="66" selection-start-line="150" selection-start-column="66" selection-end-line="150" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset/b_image/desktop.ini" />
     <entry file="file://$PROJECT_DIR$/dataset/o_image/desktop.ini" />
     <entry file="file://$PROJECT_DIR$/get_result_code/make_testset.py" />
-    <entry file="file://$PROJECT_DIR$/get_result_code/src/detector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_result_code/id_list.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -270,22 +289,74 @@
     <entry file="file://$PROJECT_DIR$/get_result_code/black_cut.py" />
     <entry file="file://$PROJECT_DIR$/get_result_code/precrop4.py" />
     <entry file="file://$PROJECT_DIR$/get_result_code/precrop3.py" />
-    <entry file="file://$PROJECT_DIR$/get_result_code/precrop.py">
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-1_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-2_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-5_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-3_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-6_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-87_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset/test2/t_facebook-89_0.jpg" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_result_code/src/get_nets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="150" column="66" selection-start-line="150" selection-start-column="66" selection-end-line="150" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_result_code/src/detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_result_code/img_change.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret column="5506" selection-start-column="5492" selection-end-column="5506" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_result_code/metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret column="16829" selection-start-column="16829" selection-end-column="16829" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_result_code/precrop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_result_code/img_change.py">
+    <entry file="file://$PROJECT_DIR$/get_result_code/json_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="191">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
