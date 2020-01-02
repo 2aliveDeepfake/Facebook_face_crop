@@ -32,6 +32,7 @@ def image_resize(image, width = None, height = None, inter = cv2.INTER_AREA):
     return image
 
 # get input dir which passed from cmd lines
+# 명령어 입력할때 terminal에 input output 위치 받는 부분
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--input',
                     dest="input_dir",
@@ -74,6 +75,12 @@ for file in file_array :
 
     # crop face area in the img => 이미지 별로 얼굴 부분 자르기
     for i in range(len(bboxs)):
+
+        output_path = output_dir + filename + '_' + str(i) + '.jpg'
+        if os.path.isfile(output_path):
+            print('file exist1 - ' + output_path)
+            break
+
         x1, y1, x2, y2, score = bboxs[i]
         height = int(y2) - int(y1)
         width = int(x2) - int(x1)
@@ -112,14 +119,14 @@ for file in file_array :
         # resize the cropped area maintaing the width height ratio
         #img = image_resize(crop_img, height=128, width=128)
 
-        output_path=output_dir+filename+'_'+str(i)+'.jpg'
+
 
         if not os.path.isfile(output_path):
             cv2.imwrite(output_path, crop_img)
-            print('no file'+output_path)
+            print('no file - '+output_path)
         else:
             # exist 하면 파일 삭제
-            print('existing file'+output_path)
+            print('existing file - '+output_path)
             #os.remove(output_path)
             if not os.path.isfile(output_path):
-                print('exist'+output_path)
+                print('exist - '+output_path)
